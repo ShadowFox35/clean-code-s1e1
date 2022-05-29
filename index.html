@@ -9,20 +9,21 @@
   <title>Todo App</title>
 </head>
 <body class="todo-list">
-  <div class="todo-list__header header">
+  <header class="todo-list__header header">
     <img src="./eisenhower-matrix.jpg" class="header__image">
     <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
-  </div>
-  <div class="todo-list__tasks tasks">
-    <p id="tasks__add">
-      <label for="tasks__new-task" class="tasks__title tasks__new-task-title">Add Item</label>
+  </header>
+  <main class="todo-list__tasks tasks">
+    <section id="tasks__add">
+      <h3 class="tasks__title tasks__new-task-title">Add Item</h3>
       <div class="tasks__wrapper">
         <input id="tasks__new-task" class="tasks__content tasks__input-text tasks__new-task-input" type="text">
         <button class="tasks__btn">Add</button>
       </div>
-    </p>
+    </section>
+    <section class="tasks__incompleted">
     <h3 class="tasks__title">Todo</h3>
     <ul id="tasks__incompleted" class="tasks__list tasks__incompleted-list">
       <li class="tasks__list-item">
@@ -40,7 +41,8 @@
         <button class="tasks__btn tasks__btn-delete"><img src="./remove.svg" class="tasks__btn-image"></button>
       </li>
     </ul>
-    
+  </section>
+  <section class="tasks__completed">
     <h3 class="tasks__title">Completed</h3>
     <ul id="tasks__completed" class="tasks__list tasks__completed-list">
       <li class="tasks__list-item">
@@ -51,7 +53,8 @@
         <button class="tasks__btn tasks__btn-delete"><img src="./remove.svg" class="tasks__btn-image"></button>
       </li>
     </ul>
-  </div>
+  </section>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
