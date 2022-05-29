@@ -31,7 +31,7 @@
 .tasks__content {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .tasks__wrapper {
   display: flex;
@@ -115,7 +115,7 @@
   width: 226px;
 }
 .tasks__list-item > .tasks__input-text {
-  width: 226px
+  width: 226px;
 }
 .tasks__btn-image {
   height: 2em;
@@ -134,12 +134,12 @@
 
 /* Edit Task */
 .tasks__list-item .tasks__input-text {
-  display: none
+  display: none;
 }
   
 .tasks__list-item_edit .tasks__input-text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
   
 .tasks__list-item_edit .tasks__label-text {
